@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnnka5th1gldj"]
+
+[ext_resource type="Script" uid="uid://bidmmb67bc85t" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bub2kmwb4onm8" path="res://world/world.tscn" id="2_h2yge"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_0xm2m")
+
+[node name="World" parent="." instance=ExtResource("2_h2yge")]
+
+[node name="UIRoot" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
